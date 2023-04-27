@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1C:БухОбслуживание</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/coin-slider-styles.css">
+    <link rel="stylesheet" href="css/jslider.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/coin-slider.min.js"></script>
+    <script type="text/javascript" src="js/jshashtable-2.1_src.js"></script>
+	<script type="text/javascript" src="js/jquery.numberformatter-1.2.3.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/jquery.dependClass-0.1.js"></script>
+	<script type="text/javascript" src="js/draggable-0.1.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <i class="home_triangle tarif"></i>
+            <table>
+                <tbody>
+                <tr>
+                    <td class="header_left">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="1С БухОбслуживание">
+                        </a>
+                    </td>
+                    <td class="header_right">
+                        <div class="header_info">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td class="header_info_place">
+                                        <b>Наша фирма</b>
+                                        <span> / Наш город</span>
+                                    </td>
+                                    <td class="header_info_phone">
+                                        +7 (861) 225-000-2
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="navigation">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td class="navigation_item first cl-effect-11">
+                                        <a href="about.html" data-hover="О компании">О компании</a>
+                                    </td>
+                                    <td class="navigation_item">
+                                        <div class="navigation_dropdown js-nav_dropdown">
+                                            <span class="dropdown_link js-nav_dropdown_link active" data-hover="Тарифы и услуги">Тарифы и услуги</span>
+                                            <i class="dropdown_triangle"></i>
+                                            <div class="dropdown_list_wrap">
+                                                <div class="dropdown_active">
+                                                    <span class="dropdown_link active js-nav_dropdown_link-close">Тарифы и услуги</span>
+                                                    <i class="dropdown_triangle"></i>
+                                                </div>
+                                                <div class="dropdown_list">
+                                                    <div class="dropdown_list_item"><a href="tarif_complex_service.html">Тариф «Комплексный сервис»</a></div>
+                                                    <div class="dropdown_list_item"><a href="tarif_reporting.html">Тариф «Отчетность»</a></div>
+                                                    <div class="dropdown_list_item"><a href="tarif_without_employees.html">Тариф «ИП без работников»</a></div>
+                                                    <div class="dropdown_list_item"><a href="tarif_additional services.html">Дополнительные услуги</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="navigation_item">
+                                        <a href="feedbacks.html" data-hover="Отзывы">Отзывы</a>
+                                    </td>
+                                    <td class="navigation_item">
+                                        <a href="faq.html" data-hover="Частые вопросы">Частые вопросы</a>
+                                    </td>
+                                    <td class="navigation_item">
+                                        <a href="contacts.html" data-hover="Контакты">Контакты</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+        	<h1>Тариф &laquo;1С:БухОбслуживание. Отчетность&raquo;</h1>
+            <table>
+                <tbody>
+                <tr>
+                    <td class="content_left">
+                        <ul class="check-list">
+                            <li>пакет бухгалтерских услуг для небольших компаний и&nbsp;ИП с&nbsp;объемом операций не&nbsp;более 20&nbsp;в месяц, которые самостоятельно оформляют все документы и&nbsp;ведут учет;</li>
+                            <li>профессиональная проверка данных, введенных в&nbsp;учетную базу в&nbsp;сервисе 1С:БО;</li>
+                            <li>возмещение убытков в&nbsp;случае неправильного расчета налогов или нарушения сроков сдачи отчетности.</li>
+                        </ul>
+                        <h4>Услуги тарифа</h4>
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr valign="top">
+                        	<td width="50%">
+                            	<ul class="check-list">
+                                    <li>одна лицензия на&nbsp;право пользования &laquo;облачной&raquo; 1С:Бухгалтерией 8</li>
+                                    <li>ведение учета</li>
+                                    <li>ведение архива</li>
+                                </ul>
+                            </td>
+                            <td width="50%">
+                            	<ul class="check-list">
+                                    <li>устные консультации</li>
+                                    <li>составление и&nbsp;сдача отчетности через интернет</li>
+                                </ul>
+                            </td>
+                        </tr></table>
+                        
+                        <div class="operations-count-control content_left">
+                            <p>Количество операций в месяц</p>
+                            <div class="layout-slider">
+                              <input id="SliderSingle" type="slider" name="opercount" value="23" /><!--value="23" -- Начальное значение бегунка -->
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+							
+							/*************      Руководство       ***************/
+							
+							// Ниже прописаны массивы данных для всех систем налогообложения.
+							// Рассмотрим их содержимое на примере СН ОСНО:
+							// var osno =  [
+							//		["0", "20", "5", "10", "2000"],
+							//		["21", "40", "10", "20", "4000"]
+							// ]; 
+							
+							// osno -- код системы налогообложения. Не менять.
+							
+							// Далее комбинации скобочек, кавычек и цифр -- это своего рода табличка вида:
+							
+							// Операций от   Операций до    Визитов курьера    Кол-во работников    Цена
+							// 0             20             5                  10                   2000
+							// 21            40             10                 20                   4000
+							
+							// Если вы не используете какие-либо системы налогообложения из списка ниже, просто не изменяйте эти массивы или удалите строчки с этими СН, если уверены, что не удалите больше, чем нужно :-).
+							
+							/****************************************************/
+							
+								var osno =  [
+									//"Операций от", "Операций до", "Визитов курьера", "Кол-во работников", "Цена"
+									["0", "20", "0", "0", "2000"],
+									["21", "40", "0", "0", "4000"]
+								];
+								
+								var usn10 =  [
+									["0", "20", "0", "0", "2100"],
+									["21", "40", "0", "0", "4100"]
+								];
+								
+								var usn6 =  [
+									["0", "20", "0", "0", "2200"],
+									["21", "40", "0", "0", "4200"]
+								];
+								
+								var eshn =  [
+									["0", "20", "0", "0", "2300"],
+									["21", "40", "0", "0", "4300"]
+								];
+								
+								var endv =  [
+									["0", "20", "0", "0", "2400"],
+									["21", "40", "0", "0", "4400"]
+								];
+								
+								var patent =  [
+									["0", "20", "0", "0", "2500"],
+									["21", "40", "0", "0", "4500"]
+								];
+								
+								var osn_envd =  [
+									["0", "20", "0", "0", "2600"],
+									["21", "40", "0", "0", "4600"]
+								];
+								
+								var osn_patent =  [
+									["0", "20", "0", "0", "2700"],
+									["21", "40", "0", "0", "4700"]
+								];
+								var usn10_envd =  [
+									["0", "20", "0", "0", "2800"],
+									["21", "40", "0", "0", "4800"]
+								];
+								
+								var usn6_envd =  [
+									["0", "20", "0", "0", "2900"],
+									["21", "40", "0", "0", "4900"]
+								];
+								
+								var usn10_patent =  [
+									["0", "20", "0", "0", "3000"],
+									["21", "40", "0", "0", "5000"]
+								];
+								
+								var usn6_patent =  [
+									["0", "20", "0", "0", "3100"],
+									["21", "40", "0", "0", "5100"]
+								];
+								
+								var eshn_envd =  [
+									["0", "20", "0", "0", "3200"],
+									["21", "40", "0", "0", "5200"]
+								];
+								
+								var eshn_patent =  [
+									["0", "20", "0", "0", "3300"],
+									["21", "40", "0", "0", "5300"]
+								];
+								
+								jQuery("#SliderSingle").slider({
+								  from: 1, // Указывается минимальное количество операций в месяц. Это будет минимум шкалы.
+								  to: 40, // Указывается максимальное количество операций в месяц. Это будет максимум шкалы.
+								  step: 1,
+								  limits: false,
+								  round: 1,
+								  format: { format: '##', locale: 'de' },
+								  skin: "round",
+								  callback: function( value ){
+									if(value == 40){ // Указывается максимальное количество операций в месяц.
+										$("input#SliderSingle").attr("value", "40+"); // "40+" Указывается максимальное количество операций в месяц.
+										$(".jslider-value span").append("+");
+									}
+									var cts = $("#currrent-taxation-system").attr("value");
+									var cts = eval(cts);
+									for(i = 0; i < cts.length; i++){
+										if((value  >= parseInt(cts[i][0])) && (value  <= parseInt(cts[i][1]))){
+											$("#price").text(cts[i][4]);
+										}
+									}
+								  }
+								});
+
+                            </script>
+                        </div>
+                        <div class="taxation-system-control content_left">
+                            <p>Система налогообложения</p>
+                            <input type="hidden" name="currrent-taxation-system" id="currrent-taxation-system" value="osn_envd" />
+                            <span class="currrent-taxation-system">ОСН+ЕНВД</span>
+                            <span class="taxation-system-btn"></span>
+                            <div class="dropdown_list_wrap">
+                                <div class="dropdown_list">
+                                <!-- Если вы не используете какие-либо системы налогообложения из списка ниже, удалите строчки с этими СН. -->
+                                    <div class="dropdown_list_item"><a href="osno">ОСНО</a></div>
+                                    <div class="dropdown_list_item"><a href="usn10">УСН 10%</a></div>
+                                    <div class="dropdown_list_item"><a href="usn6">УСН 6%</a></div>
+                                    <div class="dropdown_list_item"><a href="eshn">ЕСХН</a></div>
+                                    <div class="dropdown_list_item"><a href="endv">ЕНВД</a></div>
+                                    <div class="dropdown_list_item"><a href="patent">Патент</a></div>
+                                    <div class="dropdown_list_item active"><a href="osn_envd">ОСН+ЕНВД</a></div>
+                                    <div class="dropdown_list_item"><a href="osn_patent">ОСН+Патент</a></div>
+                                    <div class="dropdown_list_item"><a href="usn10_envd">УСН 10% + ЕНВД</a></div>
+                                    <div class="dropdown_list_item"><a href="usn6_envd">УСН 6% + ЕНВД</a></div>
+                                    <div class="dropdown_list_item"><a href="usn10_patent">УСН 10% + Патент</a></div>
+                                    <div class="dropdown_list_item"><a href="usn6_patent">УСН 6% + Патент</a></div>
+                                    <div class="dropdown_list_item"><a href="eshn_envd">ЕСХН + ЕНВД</a></div>
+                                    <div class="dropdown_list_item"><a href="eshn_patent">ЕСХН + Патент</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="board">
+                        	<ins class="board-arrow"></ins>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+                            	<td width="255">
+                                	<div class="board-header">Цена в месяц</div>
+                                    <div class="board-value"><span id="price">4600</span><i class="icon-rub"></i></div>
+                                </td>
+                            </tr></table>
+                        </div>
+                    </td>
+                    <td class="content_right">
+                        <div class="content_right_block">
+                            <a href="docs/tarif_reporting.doc" class="file"><i></i>Подробное описание услуг тарифа&nbsp;(doc)</a>
+                            <div class="file-desc">Сумма по&nbsp;тарифу взимается 1&nbsp;раз в&nbsp;квартал и&nbsp;зависит от&nbsp;системы налогов.</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="first">
+                        <div class="footer_left">
+                            <p>&copy; &laquo;1С:БухОбслуживание Наша фирма&raquo;<br/>
+                                241035 г. Наш город, ул. Наша улица, 1, 2-й этаж, офис 9</p>
+                            <p><b>+7 (383) 325-39-32.</b>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="http://1cbo.ru" target="_blank">&laquo;1С:БухОбслуживание&raquo;</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
